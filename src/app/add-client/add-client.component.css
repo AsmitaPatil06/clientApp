@@ -1,0 +1,157 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerSection {
+    flex-basis: 10%;
+}
+
+.middeleSection {
+    flex-basis: 10%;
+    background-color: hsl(0deg 0% 98%);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 17px;
+    color: hsl(212deg 10% 70%);
+}
+
+.doc {
+    flex-basis: 10%;
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+.doc:hover {
+    color: hsl(164deg 46% 59%);
+    background-color: white;
+    height: 29px;
+    width: 53px;
+    border-radius: 20px;
+}
+
+.task {
+    flex-basis: 10%;
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+.task:hover {
+    color: hsl(164deg 46% 59%);
+    background-color: white;
+    height: 29px;
+    width: 53px;
+    border-radius: 20px;
+}
+
+.pay {
+    flex-basis: 10%;
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+.pay:hover {
+    color: hsl(164deg 46% 59%);
+    background-color: white;
+    height: 29px;
+    width: 53px;
+    border-radius: 20px;
+}
+
+.prof {
+    flex-basis: 10%;
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+.prof:hover {
+    color: hsl(164deg 46% 59%);
+    background-color: white;
+    height: 29px;
+    width: 53px;
+    border-radius: 20px;
+}
+
+.action {
+    flex-basis: 35%;
+    width: 200px;
+    height: 80px;
+}
+
+.action1 {
+    /* flex-basis: 50%; */
+    width: 200px;
+    height: 80px;
+}
+
+.dropdown>button {
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.pageSection {
+    flex-basis: 80%;
+    margin-top: 13px;
+    display: flex;
+}
+
+.left {
+    flex-basis: 20%;
+    background-color: white;
+    border: 1px solid hsl(0deg 0% 98%);
+    padding: 10px;
+    box-shadow: 1px 10px hsl(0deg 0% 98%);
+}
+
+.sidenav {
+    height: 50%;
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidenav a,
+.dropdown-btn {
+    height: 50px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: hsl(212deg 10% 66%);
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: hsl(216deg 100% 50%);
+    background-color: hsl(217deg 100% 97%);
+    height: 30px;
+    width: 205px;
+    border-top-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.right {}

@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    <div class="mainSection">
+        <div class="headerSection">
+
+            <div class="name">
+                Clients
+            </div>
+
+            <div class="searchBox">
+                <mat-icon>search</mat-icon>
+                <input type="search" placeholder="search using client name or client id" />
+            </div>
+
+            <div class="btn1">
+                <Button class="btn">+Add Client</Button>
+            </div>
+
+        </div>
+        <div class="pageSection">
+            <div class="left">All</div>
+
+            <div class="right">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footerSection">
+            <div class="cards">
+                <div class="header">
+
+                    <div>
+                        client-id
+                    </div>
+                    <div>
+                        Company Name
+                    </div>
+                    <div>
+                        Creation Date
+                    </div>
+                    <div>
+                        Assigned Memeber
+                    </div>
+                    <div>
+                        Action
+                    </div>
+
+                </div>
+                <div class="content" *ngFor="let client of data">
+
+
+                    <div class="id">
+                        {{client.clientID}}
+                    </div>
+                    <div class="cmpname">
+                        {{client.companyName}}
+                    </div>
+                    <div class="time">
+                        {{client.createdAt}}
+                    </div>
+                    <div class="assigned" *ngFor="let item of client.assignedMembers">
+                        {{item.name}}
+                    </div>
+                    <!-- <div class="assigned">
+                        {{client.assignedMembers}}<br>
+                    </div> -->
+                    <div class=" action ">
+                        <mat-icon>person_outline</mat-icon>
+
+                        <img src="../../assets/images/user-blocked.PNG" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

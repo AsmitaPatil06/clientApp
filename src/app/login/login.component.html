@@ -1,0 +1,31 @@
+<div class="container">
+
+    <div class="headerSection">
+        <h3>Welcome Back!</h3>
+    </div>
+    <div class="loginSection">
+
+
+        <form [formGroup]="loginForm">
+
+            <!-- <div class="md-form" [class.has-error]="mailControl.invalid && mailControl.touched"> -->
+
+            <!-- <input type="email" id="Email" name="email" placeholder="Email Id" [(ngModel)]="email" class="form-control" required pattern="^[\w#][\w\.\'+#](.[\w\\'#]+)\@[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*(.[a-zA-Z]{2,20})$" #mailControl="ngModel">
+                <span class="help-block" *ngIf="mailControl.errors?.required && mailControl.touched" class="alert alert-danger">Email Required</span>
+                <span class="help-block" *ngIf="mailControl.errors?.pattern && mailControl.touched" class="alert alert-danger">Email Invalid</span> -->
+            <div class="md-form">
+                <input formControlName="email" type="email" id="Email" name="email" placeholder="Email Id" [(ngModel)]="email" class="form-control">
+            </div>
+
+            <div class="md-form">
+                <input formControlName="password" type="password" id="password" [(ngModel)]="password" name="password" placeholder="Passoword" class="form-control">
+            </div>
+
+            <div class="btn">
+                <button class="btn btn-primary" (click)="login()" type="submit">Login</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>

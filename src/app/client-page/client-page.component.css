@@ -1,0 +1,131 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.client-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebarSection {
+    flex-basis: 10%;
+    background-color: hsl(239deg 63% 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.header {
+    flex-basis: 10%;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sidebaricons {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+    font-size: 11px;
+}
+
+.sidebaricons>mat-icon {
+    margin-top: 20px;
+    color: #d8d8f6;
+    display: flex;
+    align-self: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebaricons>mat-icon:hover {
+    color: hsl(239deg 63% 70%);
+}
+
+.sidebaricons img {
+    align-self: center;
+    width: 35px;
+    height: 35px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.sidebaricons:hover img {
+    color: red
+}
+
+.footer {
+    flex-basis: 10%;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3em .4em .4em;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    background-color: white;
+    border-radius: 1.5em;
+    position: relative;
+    left: 50px;
+}
+
+.circle>mat-icon {
+    color: hsl(239deg 63% 59%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.pageSection {
+    flex-basis: 90%;
+}
+
+
+/* mat-toolbar {
+    background: #004a9f;
+    color: white;
+}
+
+mat-sidenav-container {
+
+    height: 100%;
+    width: 100%;
+}
+
+mat-sidenav {
+    margin: 200px;
+    border-right: none;
+    background: #002b5c;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.content {
+    /* height: 100%;
+    width: 100%; */
+
+
+/* overflow: hidden;
+border-radius: 10px;
+margin: 9px;
+margin-left: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+color: lightgray;
+
+}
+*/

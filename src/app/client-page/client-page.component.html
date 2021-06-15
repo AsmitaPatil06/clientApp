@@ -1,0 +1,48 @@
+<div class="container-fluid">
+
+    <div class="client-page">
+
+
+        <div class="sidebarSection">
+
+            <div class="header">
+                HMA
+            </div>
+            <div class="sidebaricons">
+                <img [routerLink]="['dashboard']" src="../../assets/images/dashboard.PNG" />Dashboard
+                <mat-icon routerLink="client">person_outline</mat-icon>Clients
+                <img routerLink="add" src="../../assets/images/document.PNG " />Document
+                <img src="../../assets/images/task.PNG " />Tasks
+                <img src="../../assets/images/payment.PNG " />Payments
+            </div>
+            <div class="footer ">
+                <div class="circle">
+                    <mat-icon>person_outline</mat-icon>
+                </div>
+            </div>
+        </div>
+        <div class="pageSection ">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+
+<!-- <mat-toolbar>
+
+    Responsive side navigation
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+    <mat-sidenav>
+        <div class="mat-elevation-z8"></div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+            Main content here!
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container> -->
